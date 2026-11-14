@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Luxury Wellness Spa Punawale Pune | Unisex Spa &amp; Female At-Home Beauty Parlour</title>
+    <meta name="description" content="Urban Luxury Wellness Spa at Shop No. 205, Swaraj Heights, Gaikwad Nagar, Punawale, Pimpri-Chinchwad, Pune. 16 Unisex body massages &amp; 15 female salon + at-home beauty parlour services.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta property="og:title" content="Urban Luxury Wellness Spa | Punawale, Pune">
+    <meta property="og:description" content="16 Unisex Body Massages (Oil &amp; Dry) &amp; Complete Female Salon / At-Home Beauty Parlour Services. Flat 20% OFF on First Booking!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=1200&q=80">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #071912;
+            --bg-card: #0d261d;
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --text-light: #f5f5f5;
+            --text-muted: #b8c4bf;
+            --whatsapp: #25D366;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-dark); color: var(--text-light); line-height: 1.6; }
+        h1, h2, h3, .brand-font { font-family: 'Cinzel', serif; color: var(--gold); }
+
+        header {
+            background: rgba(7, 25, 18, 0.96);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+            padding: 14px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo { font-size: 1.28rem; font-weight: 700; color: var(--gold); text-decoration: none; letter-spacing: 1px; }
+        .menu-toggle { display: none; background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 6px 11px; border-radius: 6px; font-size: 1.1rem; cursor: pointer; }
+        .nav-links { display: flex; gap: 18px; list-style: none; flex-wrap: wrap; }
+        .nav-links a { color: var(--text-light); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        .hero {
+            background: linear-gradient(rgba(7, 25, 18, 0.80), rgba(7, 25, 18, 0.92)),
+                        url('https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            padding: 75px 5%;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 1.5px; }
+        .hero .subtitle { font-size: 1.15rem; color: var(--gold-light); font-weight: 600; margin-bottom: 8px; }
+        .hero .note { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 24px; }
+        .discount-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(45deg, #b8860b, #d4af37);
+            color: #071912;
+            padding: 9px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+        .btn {
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: transform 0.2s, opacity 0.2s;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            font-size: 0.94rem;
+        }
+        .btn:hover { transform: translateY(-2px); opacity: 0.95; }
+        .btn-gold { background-color: var(--gold); color: var(--bg-dark); }
+        .btn-outline { background-color: transparent; color: var(--gold-light); border: 1.5px solid var(--gold); }
+        .btn-whatsapp { background-color: var(--whatsapp); color: #fff; }
+
+        section { padding: 60px 5%; }
+        .section-header { text-align: center; margin-bottom: 34px; }
+        .section-header h2 { font-size: 2rem; margin-bottom: 10px; }
+        .section-header p { color: var(--text-muted); max-width: 780px; margin: 0 auto; }
+
+        .parlour-filter-bar, .massage-filter-bar, .review-filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+        .filter-btn, .massage-filter-btn, .review-filter-btn {
+            background: rgba(7, 25, 18, 0.85);
+            color: var(--text-light);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            padding: 9px 16px;
+            border-radius: 30px;
+            font-family: inherit;
+            font-size: 0.86rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.25s ease;
+        }
+        .filter-btn:hover, .massage-filter-btn:hover, .review-filter-btn:hover { border-color: var(--gold); color: var(--gold-light); }
+        .filter-btn.active, .massage-filter-btn.active, .review-filter-btn.active {
+            background: var(--gold);
+            color: var(--bg-dark);
+            border-color: var(--gold);
+            font-weight: 700;
+            box-shadow: 0 3px 12px rgba(212, 175, 55, 0.35);
+        }
+        .filter-btn.home-highlight { border-color: var(--whatsapp); }
+        .filter-btn.home-highlight.active { background: var(--whatsapp); color: #fff; border-color: var(--whatsapp); box-shadow: 0 3px 12px rgba(37, 211, 102, 0.35); }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 25px; }
+        .service-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 14px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.3s, transform 0.25s;
+        }
+        .service-card.hidden-card { display: none; }
+        .service-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+        .card-top-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+        .home-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(37, 211, 102, 0.14);
+            color: #7df4a6;
+            border: 1px solid rgba(37, 211, 102, 0.5);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.74rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .type-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(212, 175, 55, 0.14);
+            color: var(--gold-light);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.74rem;
+            font-weight: 600;
+        }
+        .detail-link-btn {
+            background: transparent;
+            border: none;
+            color: var(--gold-light);
+            font-family: inherit;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .detail-link-btn:hover { color: var(--gold); }
+        .service-card h3 { font-size: 1.22rem; margin-bottom: 6px; }
+        .service-desc { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px; min-height: 42px; }
+        .service-img-wrap {
+            width: 100%;
+            height: 205px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            margin-bottom: 15px;
+            background: #04100b;
+            cursor: pointer;
+        }
+        .service-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.35s ease; }
+        .service-card:hover .service-img-wrap img { transform: scale(1.04); }
+
+        .rate-box-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.8px; color: var(--gold-light); margin-bottom: 8px; font-weight: 600; }
+        .rate-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+        .rate-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(7, 25, 18, 0.85);
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .rate-option:hover { border-color: rgba(212, 175, 55, 0.65); }
+        .rate-option.selected { background: rgba(212, 175, 55, 0.16); border: 1.5px solid var(--gold); box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+        .rate-left { display: flex; align-items: center; gap: 9px; font-size: 0.86rem; font-weight: 500; }
+        .radio-dot { width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--gold); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .rate-option.selected .radio-dot::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background-color: var(--gold); }
+        .price-tag { color: var(--gold-light); font-weight: 700; font-size: 0.96rem; white-space: nowrap; }
+
+        .mode-switch-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+        .mode-pill {
+            padding: 8px;
+            border-radius: 7px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background: rgba(7, 25, 18, 0.8);
+            color: var(--text-muted);
+            font-family: inherit;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: all 0.2s ease;
+        }
+        .mode-pill:hover { border-color: var(--gold); color: var(--text-light); }
+        .mode-pill.active-mode { background: rgba(37, 211, 102, 0.18); border: 1.5px solid var(--whatsapp); color: #8af8b1; }
+
+        .book-selected-btn {
+            width: 100%;
+            background-color: var(--whatsapp);
+            color: #fff;
+            border: none;
+            padding: 11px 16px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.92rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .book-selected-btn:hover { background-color: #1ebe57; transform: translateY(-1px); }
+
+        .female-section { background-color: #0a2018; border-top: 1px solid rgba(212, 175, 55, 0.25); border-bottom: 1px solid rgba(212, 175, 55, 0.25); }
+        .tag-pill { display: inline-block; background: rgba(212, 175, 55, 0.15); color: var(--gold-light); border: 1px solid var(--gold); padding: 5px 15px; border-radius: 20px; font-size: 0.82rem; margin-bottom: 12px; }
+
+        .addons-box { margin-top: 35px; background: var(--bg-card); border: 1px dashed var(--gold); border-radius: 12px; padding: 24px; text-align: center; }
+        .addons-box h3 { font-size: 1.25rem; margin-bottom: 6px; }
+        .addons-subtitle { color: var(--text-muted); font-size: 0.86rem; margin-bottom: 16px; }
+        .addons-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 18px; }
+        .addon-chip {
+            background: rgba(7, 25, 18, 0.92);
+            border: 1px solid rgba(212, 175, 55, 0.45);
+            padding: 9px 16px;
+            border-radius: 24px;
+            font-size: 0.86rem;
+            color: var(--text-light);
+            font-family: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.22s ease;
+        }
+        .addon-chip:hover { background: var(--gold); color: var(--bg-dark); border-color: var(--gold); transform: translateY(-2px); font-weight: 600; }
+        .area-chip {
+            background: rgba(37, 211, 102, 0.12);
+            border: 1px solid rgba(37, 211, 102, 0.5);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.84rem;
+            color: #9ffac0;
+            font-family: inherit;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+        .area-chip:hover { background: var(--whatsapp); color: #fff; transform: translateY(-2px); }
+
+        .rating-summary-banner {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: var(--bg-card);
+            border: 1px solid var(--gold);
+            padding: 12px 24px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+        }
+        .rating-stars { color: #fbbc04; font-size: 1.05rem; letter-spacing: 2px; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.28);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.25s, transform 0.25s;
+        }
+        .review-card.hidden-review { display: none; }
+        .review-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+        .review-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+        .reviewer-info { display: flex; align-items: center; gap: 10px; }
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #b8860b, #d4af37);
+            color: #071912;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+        .reviewer-name { font-weight: 600; font-size: 0.95rem; color: var(--text-light); }
+        .reviewer-meta { font-size: 0.76rem; color: var(--text-muted); }
+        .google-g-badge { font-size: 0.74rem; background: rgba(255, 255, 255, 0.08); color: var(--gold-light); padding: 3px 9px; border-radius: 12px; white-space: nowrap; }
+        .review-text { font-size: 0.87rem; color: #dce5e1; margin-bottom: 12px; line-height: 1.55; }
+        .review-tag { font-size: 0.76rem; color: var(--gold-light); background: rgba(212, 175, 55, 0.12); border: 1px solid rgba(212, 175, 55, 0.3); padding: 4px 10px; border-radius: 15px; display: inline-block; align-self: flex-start; }
+
+        .faq-section { background-color: #0a2018; border-top: 1px solid rgba(212, 175, 55, 0.25); border-bottom: 1px solid rgba(212, 175, 55, 0.25); }
+        .faq-container { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+        .faq-item { background: var(--bg-card); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 10px; overflow: hidden; }
+        .faq-question {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: var(--gold-light);
+            font-family: inherit;
+            font-size: 0.96rem;
+            font-weight: 600;
+            padding: 16px 20px;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+        .faq-question i { color: var(--gold); transition: transform 0.25s ease; }
+        .faq-item.open .faq-question i { transform: rotate(180deg); }
+        .faq-answer { display: none; padding: 12px 20px 16px; color: var(--text-muted); font-size: 0.88rem; line-height: 1.65; border-top: 1px solid rgba(212, 175, 55, 0.12); }
+        .faq-item.open .faq-answer { display: block; }
+
+        .booking-box { max-width: 620px; margin: 0 auto; background: var(--bg-card); padding: 30px; border-radius: 12px; border: 1px solid var(--gold); }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 6px; color: var(--gold-light); font-size: 0.9rem; }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            background: var(--bg-dark);
+            color: var(--text-light);
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--gold); }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; text-align: center; }
+        .contact-card {
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-card i.card-icon { font-size: 2rem; color: var(--gold); margin-bottom: 12px; }
+        .contact-card a.phone-link { color: var(--text-light); text-decoration: none; display: block; margin-top: 8px; font-weight: 500; font-size: 0.96rem; }
+        .contact-card a.phone-link:hover { color: var(--gold-light); }
+        .map-btn {
+            margin-top: 14px;
+            padding: 9px 18px;
+            font-size: 0.88rem;
+            border-radius: 6px;
+            background: var(--gold);
+            color: var(--bg-dark);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: transform 0.2s;
+        }
+        .map-btn:hover { transform: translateY(-2px); }
+        .address-text { color: var(--text-light); margin-top: 6px; font-size: 0.92rem; line-height: 1.55; }
+        .map-embed-wrap { margin-top: 32px; border-radius: 12px; overflow: hidden; border: 1.5px solid rgba(212, 175, 55, 0.45); background: var(--bg-card); }
+        .map-embed-wrap iframe { width: 100%; height: 320px; border: 0; display: block; }
+        footer { text-align: center; padding: 25px 5%; background: #04100b; border-top: 1px solid rgba(212, 175, 55, 0.2); color: var(--text-muted); font-size: 0.9rem; }
+
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(3, 12, 8, 0.85);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            z-index: 2000;
+        }
+        .modal-overlay.open { display: flex; }
+        .modal-box {
+            background: var(--bg-card);
+            border: 1.5px solid var(--gold);
+            border-radius: 14px;
+            max-width: 520px;
+            width: 100%;
+            padding: 24px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+        }
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(7, 25, 18, 0.9);
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-badge { display: inline-block; background: rgba(37, 211, 102, 0.16); color: #8af8b1; border: 1px solid var(--whatsapp); padding: 4px 12px; border-radius: 20px; font-size: 0.76rem; font-weight: 600; margin-bottom: 10px; }
+        .modal-box h3 { font-size: 1.35rem; margin-bottom: 8px; padding-right: 30px; }
+        .modal-desc { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px; }
+        .modal-includes { background: rgba(7, 25, 18, 0.75); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 8px; padding: 12px 15px; margin-bottom: 14px; }
+        .modal-includes h4 { font-size: 0.85rem; color: var(--gold-light); margin-bottom: 6px; }
+        .modal-includes ul { list-style: none; font-size: 0.84rem; color: var(--text-light); }
+        .modal-includes li { margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+        .modal-includes li i { color: var(--whatsapp); font-size: 0.8rem; }
+        .modal-price-box { font-size: 1rem; font-weight: 700; color: var(--gold-light); margin-bottom: 14px; padding: 10px 14px; border-radius: 8px; background: rgba(212, 175, 55, 0.12); border: 1px solid rgba(212, 175, 55, 0.35); }
+
+        .float-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp);
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 1000;
+            text-decoration: none;
+        }
+        .float-wa:hover { background-color: #1ebe57; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.85rem; }
+            .menu-toggle { display: block; }
+            .nav-links { display: none; width: 100%; flex-direction: column; gap: 12px; padding-top: 10px; border-top: 1px solid rgba(212, 175, 55, 0.2); }
+            .nav-links.active { display: flex; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo brand-font">URBAN LUXURY SPA</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#unisex-spa">16 Massages</a></li>
+            <li><a href="#female-home">15 Parlour &amp; Home Services</a></li>
+            <li><a href="#reviews">Google Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#quick-book">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <a href="#quick-book" class="discount-badge"><i class="fas fa-sparkles"></i> Flat 20% OFF on First Booking • Claim Now</a>
+        <h1>Urban Luxury Wellness Spa</h1>
+        <p class="subtitle">16 Unisex Body Massages (Oil &amp; Dry) • 15 Female Salon &amp; At-Home Beauty Parlour Services</p>
+        <p class="note">Certified Therapists &amp; Female Beauticians • 100% Hygienic • Shop No. 205, Swaraj Heights, Punawale, Pune</p>
+        <div class="hero-btns">
+            <a href="#unisex-spa" class="btn btn-gold"><i class="fas fa-spa"></i> View 16 Massages</a>
+            <a href="#female-home" class="btn btn-gold" id="heroHomeFilterBtn"><i class="fas fa-home"></i> Female Home Parlour (15)</a>
+            <a href="https://wa.me/917796060190?text=Hello%20Urban%20Luxury%20Wellness%20Spa%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Book</a>
+            <a href="tel:+918007776999" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Call: 8007776999</a>
+        </div>
+    </section>
+
+    <section id="unisex-spa">
+        <div class="section-header">
+            <h2>16 Luxury Body Massages (Oil, Dry &amp; Unisex Spa)</h2>
+            <p>ऑयल मसाज, ड्राई मसाज, डीप टिश्यू, हॉट स्टोन या कैंडल मसाज—अपनी पसंद की थैरेपी और <strong>60, 90 या 120 मिनट</strong> सेलेक्ट करें व सीधे WhatsApp पर बुक करें।</p>
+        </div>
+        <div class="massage-filter-bar" id="massageFilterBar">
+            <button type="button" class="massage-filter-btn active" data-mfilter="all"><i class="fas fa-th-large"></i> All Massages (16)</button>
+            <button type="button" class="massage-filter-btn" data-mfilter="oil"><i class="fas fa-tint"></i> Oil Massages</button>
+            <button type="button" class="massage-filter-btn" data-mfilter="dry"><i class="fas fa-hands"></i> Dry Massages (No Oil)</button>
+            <button type="button" class="massage-filter-btn" data-mfilter="pain"><i class="fas fa-heartbeat"></i> Pain &amp; Deep Relief</button>
+            <button type="button" class="massage-filter-btn" data-mfilter="luxury"><i class="fas fa-crown"></i> Luxury &amp; Scrub Combos</button>
+        </div>
+        <div class="services-grid" id="massageGrid">
+            <div class="service-card massage-card" data-mcategories="all oil" data-card-title="Classic Full Body Oil Massage" data-details="Traditional warm oil full-body relaxation massage using pure Almond, Coconut, Olive, or Sesame oil to nourish skin and relieve fatigue." data-includes="Choice of Warm Almond / Coconut / Olive Oil|Full Back, Arms, Legs &amp; Shoulder Strokes|Dry Skin Nourishment &amp; Glow|Warm Towel &amp; Shower Facility">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-tint"></i> Classic Oil Massage</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>1. Classic Full Body Oil Massage</h3>
+                    <p class="service-desc">Warm Almond, Coconut, or Olive oil massaged smoothly from head to toe for deep hydration, relaxation, and body recovery.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=80" alt="Warm Oil Full Body Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,399"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,399</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹1,999"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹1,999</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹2,699"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹2,699</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all dry pain" data-card-title="Classic Dry Acupressure Massage" data-details="100% oil-free dry back, shoulder, and full-body acupressure massage over comfortable cotton spa attire—zero stickiness, instant relief." data-includes="100% Oil-Free &amp; Non-Sticky Dry Therapy|Back, Neck &amp; Shoulder Acupressure Points|Palm Compression &amp; Muscle Kneading|No Shower Needed—Go Straight Back to Work">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-hands"></i> Dry Massage (No Oil)</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>2. Classic Dry Acupressure Massage</h3>
+                    <p class="service-desc">Zero-oil dry pressure massage across the spine, shoulders, and legs—ideal for quick, non-sticky stress and stiffness relief.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1761718210089-ba3bb5ccb54f?auto=format&fit=crop&w=900&q=80" alt="Oil-Free Dry Back Acupressure Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,499"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,499</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,199"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,199</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹2,899"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹2,899</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil" data-card-title="Swedish Massage" data-details="Gentle full-body European relaxation therapy targeting back, shoulders, neck, and legs to improve blood flow and relieve daily tiredness." data-includes="Warm Organic Almond/Lavender Oil|Full Back, Neck &amp; Shoulder Relaxation|Stress &amp; Sleep Improvement|Fresh Towel &amp; Shower Facility">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-tint"></i> Oil Relaxation</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>3. Swedish Massage</h3>
+                    <p class="service-desc">Classic European full-body back relaxation using long, smooth strokes to boost blood circulation and relieve stress.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=900&q=80" alt="Swedish Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,499"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,499</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,199"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,199</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹2,899"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹2,899</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil" data-card-title="Aromatherapy Massage" data-details="Calming essential oil therapy ideal for insomnia, anxiety, headaches, and IT/office work exhaustion." data-includes="Choice of Lavender, Lemongrass or Rose Oil|Gentle Nerve-Calming Back Strokes|Head &amp; Temple Pressure Points|Peaceful Aroma Ambience">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-tint"></i> Essential Oil Spa</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>4. Aroma (Aromatherapy) Massage</h3>
+                    <p class="service-desc">Warm pure essential oils (Lavender, Lemongrass, Rose) massaged gently into the back &amp; body for sound sleep and freshness.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1700522924565-9fad1c05469e?auto=format&fit=crop&w=900&q=80" alt="Aromatherapy Back Oil Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,599"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,599</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,299"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,299</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹2,999"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹2,999</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil pain" data-card-title="Deep Tissue Massage" data-details="Strong, targeted pressure therapy designed for chronic lower back stiffness, frozen shoulder, and deep muscle knots." data-includes="Slow Firm Thumb &amp; Elbow Pressure|Trigger Point Knot Release|Lower Back &amp; Upper Trap Focus|Warm Pain-Relief Herbal Oil">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-heartbeat"></i> Deep Pain Relief</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>5. Deep Tissue Massage</h3>
+                    <p class="service-desc">Focused firm pressure on tight back muscles and knots to relieve chronic lower-back pain, stiffness, and work fatigue.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?auto=format&fit=crop&w=900&q=80" alt="Deep Tissue Back Muscle Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,799"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,799</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,499"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,499</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,299"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,299</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all dry pain" data-card-title="Traditional Thai Dry Massage" data-details="Dry oil-free traditional Thai stretching &amp; acupressure performed in loose comfortable attire to restore body flexibility." data-includes="Zero Oil Dry Therapy|Assisted Yogic Back &amp; Leg Stretching|Energy Line Acupressure|Posture &amp; Joint Mobility Boost">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-hands"></i> Dry Thai Therapy</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>6. Traditional Thai Dry Massage</h3>
+                    <p class="service-desc">Oil-free ancient acupressure and assisted yogic back stretching to unlock stiff joints, improve posture, and boost energy.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=900&q=80" alt="Traditional Thai Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,699"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,699</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,399"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,399</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,099"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,099</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil luxury" data-card-title="Hawaiian Lomi Lomi Massage" data-details="Traditional Hawaiian rhythmic forearm massage waves across the back and body to release deep emotional &amp; muscular stress." data-includes="Continuous Flowing Forearm Strokes|Deep Shoulder &amp; Spine Release|Warm Tropical Aromatic Oil|Complete Mind-Body Rejuvenation">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-tint"></i> Hawaiian Oil</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>7. Lomi Lomi Massage</h3>
+                    <p class="service-desc">Traditional Hawaiian flowing forearm waves along the back and shoulders to release deep tension and restore harmony.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1709755491926-f7aa83748967?auto=format&fit=crop&w=900&q=80" alt="Lomi Lomi Back Massage by Female Therapist" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,899"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,899</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,699"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,699</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,499"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,499</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all pain luxury" data-card-title="Hot Stone Massage" data-details="Heated volcanic basalt stones placed along the spine and glided over muscles to melt deep stiffness instantly." data-includes="Sanitized Heated Basalt Stones|Spine Energy Chakra Stone Placement|Warm Aromatic Oil Gliding|Deep Muscle &amp; Joint Warmth">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-fire"></i> Heated Stone Spa</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>8. Hot Stone Therapy</h3>
+                    <p class="service-desc">Warm smooth basalt stones placed along the spine and massaged over the back to melt away deep muscular soreness.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=80" alt="Hot Stone Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹2,199"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹2,199</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,999"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,999</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,799"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,799</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil luxury" data-card-title="Balinese Royal Massage" data-details="Authentic Indonesian full-body wellness ritual combining gentle stretches, skin rolling, and palm strokes." data-includes="Warm Jasmine / Frangipani Oil|Acupressure + Gentle Back Stretch|Full Body Circulation Boost|Deep Calmness &amp; Glow">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-crown"></i> Royal Oil + Stretch</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>9. Balinese Royal Massage</h3>
+                    <p class="service-desc">Rich Indonesian therapy combining palm pressure, back acupressure, and warm aromatic oils for complete mind-body healing.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1650044252595-cacd425982ff?auto=format&fit=crop&w=900&q=80" alt="Balinese Back Massage Therapy" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,899"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,899</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,599"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,599</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,399"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,399</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil luxury" data-card-title="Warm Candle Melt Massage" data-details="Luxury melted shea butter, beeswax, and jojoba spa candle poured warmly over your back for deeply velvety skin and calmness." data-includes="Skin-Safe Warm Shea &amp; Soy Spa Candle|Deeply Moisturizing Back &amp; Body Strokes|Gentle Vanilla / Sandalwood Aroma|Zero Wax Residue—Silky Smooth Skin">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-crown"></i> Luxury Candle Spa</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>10. Warm Candle Melt Massage</h3>
+                    <p class="service-desc">Skin-safe warm melted shea butter &amp; essential oil candle poured gently onto the back for ultra-soft skin and deep bliss.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=900&q=80" alt="Warm Candle Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹2,199"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹2,199</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,999"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,999</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,799"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,799</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil luxury" data-card-title="Four Hands Luxury Massage" data-details="Royal signature therapy where two therapists perform mirrored, synchronized massage strokes across the entire body simultaneously." data-includes="Two Therapists Working in Sync|Simultaneous Upper &amp; Lower Body Care|Premium Essential Oil Blend|Ultimate Luxury Spa Experience">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-crown"></i> Signature 4-Hands</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>11. Four Hands Luxury Massage</h3>
+                    <p class="service-desc">Two therapists working in synchronized rhythmic movements across your back and shoulders for double royal pampering.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1741522509407-41cfe73b0b75?auto=format&fit=crop&w=900&q=80" alt="Therapist Performing Synchronized Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹3,199"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹3,199</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹4,499"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹4,499</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹5,799"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹5,799</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil pain" data-card-title="Ayurvedic Potli & Abhyanga Massage" data-details="Traditional Ayurvedic warm medicated oil massage combined with heated herbal bolus (potli) compresses to heal joint pain." data-includes="Heated Ayurvedic Herbal Potli Compress|Warm Sesame / Dhanwantharam Oil|Joint, Knee &amp; Spine Pain Relief|Body Detox &amp; Stiffness Removal">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-leaf"></i> Herbal Pain Therapy</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>12. Ayurvedic Potli &amp; Abhyanga</h3>
+                    <p class="service-desc">Warm herbal compresses (potlis) and medicated oil pressed gently along the back to relieve joint pain and stiffness.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1775133262667-316bd4d9e5b5?auto=format&fit=crop&w=900&q=80" alt="Herbal Potli Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,999"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,999</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,799"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,799</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,599"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,599</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all pain dry" data-card-title="Sports Recovery & Trigger Point Massage" data-details="Fast-recovery muscle therapy for gym-lovers, cyclists, and runners focusing on hamstrings, calves, shoulders, and lower back." data-includes="Deep Myofascial &amp; Trigger Release|Hamstring, Calf &amp; Back Recovery|Post-Workout Assisted Stretching|Reduces Muscle Cramps &amp; Soreness">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-heartbeat"></i> Sports &amp; Stretch</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>13. Sports Recovery Massage</h3>
+                    <p class="service-desc">Targeted back, shoulder, and muscle recovery therapy for gym-goers and runners to ease soreness and prevent cramps.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?auto=format&fit=crop&w=900&q=80" alt="Sports Trigger Point Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,899"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,899</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,699"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,699</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,499"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,499</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil" data-card-title="Lymphatic Drainage & Detox Massage" data-details="Gentle, rhythmic light-touch detox massage designed to reduce water retention, bloating, sluggishness, and boost body immunity." data-includes="Light Rhythmic Detox Strokes|Reduces Swelling &amp; Water Retention|Improves Immunity &amp; Skin Tone|Calming Lemongrass / Grapefruit Oil">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-leaf"></i> Wellness Detox</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>14. Lymphatic Detox Massage</h3>
+                    <p class="service-desc">Light rhythmic body strokes along lymph pathways to flush toxins, reduce body puffiness, and recharge natural energy.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=900&q=80" alt="Lymphatic Detox Back Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,799"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,799</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,599"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,599</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,299"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,299</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all dry oil pain" data-card-title="Head, Shoulder & Foot Reflexology" data-details="Focused relief for tired feet, calves, neck stiffness, and screen headaches using reflexology pressure points (Oil or Dry choice)." data-includes="Sole Reflex Point Stimulation|Calf &amp; Ankle Relaxation|Head Champi &amp; Neck Release|Available in Oil or Dry Option">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-spa"></i> Oil / Dry Choice</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>15. Head, Shoulder &amp; Foot Reflexology</h3>
+                    <p class="service-desc">Soothing pressure on foot reflex points, calves, neck, and shoulders to cure standing fatigue and migraines (Oil or Dry).</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1675159364615-38e1f6b62282?auto=format&fit=crop&w=900&q=80" alt="Foot Reflexology Oil Massage" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,299"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,299</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹1,899"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹1,899</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹2,499"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹2,499</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card massage-card" data-mcategories="all oil luxury" data-card-title="Full Body Scrub + Massage Combo" data-details="Complete skin polishing + relaxation combo that removes body tan, dead skin cells, and leaves skin glowing and silky smooth." data-includes="Coffee / Rose / Sea Salt Full Body Scrub|De-Tan &amp; Dead Skin Exfoliation|Full Body Aromatic Oil Massage|Steam &amp; Warm Shower Rinse">
+                <div>
+                    <div class="card-top-meta"><span class="type-badge"><i class="fas fa-sparkles"></i> Scrub + Oil Combo</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>16. Body Scrub &amp; Polish + Massage</h3>
+                    <p class="service-desc">Coffee, Sea Salt, or Rose exfoliating back &amp; body scrub to remove tan and dead skin, followed by relaxing oil massage.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1709755491926-f7aa83748967?auto=format&fit=crop&w=900&q=80" alt="Body Scrub and Back Spa Therapy" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Duration &amp; Rate:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="60 Minutes - ₹1,999"><span class="rate-left"><span class="radio-dot"></span> 60 Minutes</span><span class="price-tag">₹1,999</span></div>
+                        <div class="rate-option" data-value="90 Minutes - ₹2,799"><span class="rate-left"><span class="radio-dot"></span> 90 Minutes</span><span class="price-tag">₹2,799</span></div>
+                        <div class="rate-option" data-value="120 Minutes - ₹3,599"><span class="rate-left"><span class="radio-dot"></span> 120 Minutes</span><span class="price-tag">₹3,599</span></div>
+                    </div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="female-home" class="female-section">
+        <div class="section-header">
+            <span class="tag-pill"><i class="fas fa-female"></i> Exclusively For Women • 15 Salon &amp; At-Home Services by Female Staff</span>
+            <h2>Female Beauty Parlour &amp; Home Service</h2>
+            <p>ब्यूटी पार्लर के सभी काम—हेयरकट, केराटिन, हेयर कलर, हाइड्रा फेशियल, ब्लीच, वैक्सिंग, थ्रेडिंग, नेल आर्ट, आईलैश, ब्राइडल मेकअप व मेहंदी—<strong>Home Service</strong> या <strong>Parlour Visit</strong> के साथ बुक करें।</p>
+        </div>
+
+        <div class="parlour-filter-bar" id="parlourFilterBar">
+            <button type="button" class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All Services (15)</button>
+            <button type="button" class="filter-btn home-highlight" data-filter="home-service"><i class="fas fa-home"></i> Home Service Available (Female Only)</button>
+            <button type="button" class="filter-btn" data-filter="hair"><i class="fas fa-cut"></i> Haircut, Spa, Colour &amp; Keratin</button>
+            <button type="button" class="filter-btn" data-filter="skin"><i class="fas fa-sparkles"></i> Facial, Hydra, Bleach &amp; D-Tan</button>
+            <button type="button" class="filter-btn" data-filter="grooming"><i class="fas fa-hand-sparkles"></i> Waxing, Threading, Nails &amp; Lashes</button>
+            <button type="button" class="filter-btn" data-filter="bridal"><i class="fas fa-crown"></i> Bridal, Makeup &amp; Mehndi</button>
+            <button type="button" class="filter-btn" data-filter="home-spa"><i class="fas fa-spa"></i> Female Home Spa</button>
+        </div>
+
+        <div class="services-grid" id="parlourGrid">
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Haircut & Hair Styling" data-categories="all home-service hair" data-details="Professional hair styling &amp; cutting at home or parlour using sterilized scissors, serum, and protective capes." data-includes="Consultation for Face-Shape Cut|U, V, Straight, Layer, Feather or Step Cut|Hair Serum &amp; Blow Dry / Ironing / Curls|Full Floor Clean-up After Home Haircut">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>1. Haircut &amp; Hair Styling</h3>
+                    <p class="service-desc">U-Cut, V-Cut, Straight Trim, Layer Cut, Feather Cut, Step Cut, Hair Wash, Blow Dry, Ironing &amp; Soft Curls.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1647462741268-e5724e5886c0?auto=format&fit=crop&w=900&q=80" alt="Haircut in Beauty Parlour" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Haircut / Styling Package:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Basic Haircut (U / V / Straight) - ₹399"><span class="rate-left"><span class="radio-dot"></span> Basic Cut (U / V / Straight)</span><span class="price-tag">₹399</span></div>
+                        <div class="rate-option" data-value="Advance Cut (Layer / Feather / Step) + Wash - ₹699"><span class="rate-left"><span class="radio-dot"></span> Advance (Layer / Feather / Step)</span><span class="price-tag">₹699</span></div>
+                        <div class="rate-option" data-value="Haircut + Blow Dry + Styling (Curls/Straight) - ₹999"><span class="rate-left"><span class="radio-dot"></span> Cut + Wash + Blow Dry / Curls</span><span class="price-tag">₹999</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Hair Spa, Oil Champi & Anti-Dandruff" data-categories="all home-service hair" data-details="Deep conditioning L'Oréal hair spa, warm Ayurvedic oil champi, and anti-dandruff scalp treatment to stop hair fall." data-includes="Warm Bhringraj / Almond Oil Head Champi|L'Oréal / Matrix Nourishing Hair Spa Cream|Anti-Dandruff Scalp Detox &amp; Steam Towel|Silky Frizz-Free Shine">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>2. Hair Spa, Champi &amp; Anti-Dandruff</h3>
+                    <p class="service-desc">L'Oréal Nourishing Hair Spa, Warm Herbal Oil Champi, Steam Hydration, and Anti-Dandruff / Hair-Fall Scalp Therapy.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Hair Spa and Blow Dry" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Hair Care Option:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Warm Herbal Oil Champi + Hair Wash - ₹499"><span class="rate-left"><span class="radio-dot"></span> Warm Oil Champi + Wash</span><span class="price-tag">₹499</span></div>
+                        <div class="rate-option" data-value="L'Oreal Hair Spa + Head Massage + Steam - ₹899"><span class="rate-left"><span class="radio-dot"></span> L'Oréal Hair Spa + Steam</span><span class="price-tag">₹899</span></div>
+                        <div class="rate-option" data-value="Anti-Dandruff / Hair Fall Scalp Treatment - ₹1,199"><span class="rate-left"><span class="radio-dot"></span> Anti-Dandruff / Hair-Fall Spa</span><span class="price-tag">₹1,199</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Hair Colour, Highlights & Root Touch-Up" data-categories="all home-service hair" data-details="Ammonia-free L'Oréal INOA, Majirel, and Matrix hair colouring, grey root touch-ups, global hair colour, and fashion highlights." data-includes="Ammonia-Free L'Oréal INOA / Majirel|100% Grey Coverage Root Touch-Up|Global Colour / Balayage / Foil Streaks|Post-Colour Protein Wash &amp; Blow Dry">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>3. Hair Colour &amp; Highlights</h3>
+                    <p class="service-desc">Grey Root Touch-Up (Ammonia-Free), Global Hair Colour, Fashion Streaks, Balayage &amp; Foil Highlights with Blow Dry.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Salon Hair Colouring and Styling" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Hair Colour Service:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Root Touch-Up (L'Oreal / Ammonia-Free) - ₹899"><span class="rate-left"><span class="radio-dot"></span> Root Touch-Up (Grey Cover)</span><span class="price-tag">₹899</span></div>
+                        <div class="rate-option" data-value="Global Hair Colour (Full Length) - ₹1,999+"><span class="rate-left"><span class="radio-dot"></span> Global Hair Colour</span><span class="price-tag">₹1,999+</span></div>
+                        <div class="rate-option" data-value="Fashion Highlights / Balayage / Streaks - ₹2,499+"><span class="rate-left"><span class="radio-dot"></span> Highlights / Balayage Streaks</span><span class="price-tag">₹2,499+</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Keratin, Smoothening & Hair Botox" data-categories="all home-service hair" data-details="Long-lasting Keratin, Hair Smoothening, Nanoplastia, and Hair Botox treatments to transform frizzy dry hair into silky straight locks." data-includes="Formaldehyde-Free Safe Keratin &amp; Botox|Deep Repair for Dry &amp; Damaged Hair|Sleek Straight Smoothening / Rebonding|Free After-Care Consultation">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home &amp; Salon Both</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>4. Keratin, Smoothening &amp; Botox</h3>
+                    <p class="service-desc">Frizz-free Brazilian Keratin, Hair Botox Repair, Nanoplastia Shine, and Silky Hair Smoothening / Rebonding.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&q=80" alt="Keratin and Hair Smoothening" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Smoothing Treatment:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Keratin Protein Treatment (All Lengths) - ₹2,999+"><span class="rate-left"><span class="radio-dot"></span> Keratin Treatment</span><span class="price-tag">₹2,999+</span></div>
+                        <div class="rate-option" data-value="Hair Smoothening / Straight Rebonding - ₹3,499+"><span class="rate-left"><span class="radio-dot"></span> Hair Smoothening / Rebonding</span><span class="price-tag">₹3,499+</span></div>
+                        <div class="rate-option" data-value="Luxury Hair Botox / Nanoplastia Shine - ₹3,999+"><span class="rate-left"><span class="radio-dot"></span> Hair Botox / Nanoplastia</span><span class="price-tag">₹3,999+</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Facial & Skin Cleanup" data-categories="all home-service skin" data-details="Single-use sealed facial kits (O3+, Lotus, Sara, VLCC) performed with ultrasonic scrubber, steam, and relaxing lymphatic facial massage." data-includes="Sealed Single-Use Facial Kit|Cleansing, Scrubbing, Steam &amp; Blackhead Removal|20-Min Glow Facial Massage|Brightening Peel-Off / Sheet Mask">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>5. Facials &amp; Skin Cleanup</h3>
+                    <p class="service-desc">Fruit / Glow Cleanup, Lotus Radiant, Gold &amp; Diamond Facial, Pearl Glow, and O3+ Bridal Whitening Facial.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1706795034830-de41aee06afa?auto=format&fit=crop&w=900&q=80" alt="Facial Massage Treatment at Parlour" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Facial Package:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Fruit / VLCC Glow Cleanup (35 Min) - ₹599"><span class="rate-left"><span class="radio-dot"></span> Fruit / Glow Cleanup</span><span class="price-tag">₹599</span></div>
+                        <div class="rate-option" data-value="Lotus / Shahnaz Gold / Diamond Facial - ₹1,299"><span class="rate-left"><span class="radio-dot"></span> Lotus / Gold / Diamond Facial</span><span class="price-tag">₹1,299</span></div>
+                        <div class="rate-option" data-value="O3+ Bridal Brightening / Anti-Ageing Facial - ₹1,899"><span class="rate-left"><span class="radio-dot"></span> O3+ Bridal Whitening Facial</span><span class="price-tag">₹1,899</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Hydra Facial & Skin Glow Mask" data-categories="all home-service skin" data-details="Advanced multi-step Hydra Facial, Charcoal pore-detox mask, and Vitamin-C skin brightening for glass-like radiance." data-includes="Deep Pore Extraction &amp; Hydration|Charcoal / Algae Rubber Peel-Off Mask|Vitamin-C &amp; Hyaluronic Acid Serum|Instant Glass-Skin Party Glow">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>6. Hydra Facial &amp; Charcoal Peel</h3>
+                    <p class="service-desc">Charcoal Blackhead Detox, Vitamin-C Korean Glass Glow, and 7-Step Hydra Facial for deep hydration and clear pores.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1782159981479-0fafb56d3cd6?auto=format&fit=crop&w=900&q=80" alt="Facial Mask and Hydra Glow Care" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Advance Skin Treatment:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Charcoal Blackhead Detox + Peel-Off Mask - ₹899"><span class="rate-left"><span class="radio-dot"></span> Charcoal Detox + Peel Mask</span><span class="price-tag">₹899</span></div>
+                        <div class="rate-option" data-value="Vitamin-C Korean Glass Skin Facial - ₹1,499"><span class="rate-left"><span class="radio-dot"></span> Vitamin-C Glass Skin Facial</span><span class="price-tag">₹1,499</span></div>
+                        <div class="rate-option" data-value="7-Step Luxury Hydra Facial - ₹2,199"><span class="rate-left"><span class="radio-dot"></span> 7-Step Luxury Hydra Facial</span><span class="price-tag">₹2,199</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Face, Back & Body Bleach / D-Tan" data-categories="all home-service skin" data-details="Gentle ammonia-balanced OxyLife / Sara / O3+ Bleach and herbal D-Tan packs to remove sun tan from face, neck, arms, and back." data-includes="Skin-Patch Tested Mild Bleach / D-Tan|O3+ / Sara / Raaga Professional Pack|Face, Neck, Back &amp; Full Arms Coverage|Soothing Post-Pack Moisturizing Cream">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>7. Bleach &amp; D-Tan (Face &amp; Body)</h3>
+                    <p class="service-desc">O3+ / Sara D-Tan &amp; OxyLife / Diamond Bleach for Face, Neck, Underarms, Full Arms, Back &amp; Full Body tan removal.</p>
+                    <div class="service-img-wrap open-card-detail"><img src="https://images.unsplash.com/photo-1706795034830-de41aee06afa?auto=format&fit=crop&w=900&q=80" alt="Skin D-Tan and Bleach Service" loading="lazy"></div>
+                </div>
+                <div>
+                    <div class="rate-box-title">Select Bleach / D-Tan Area:</div>
+                    <div class="rate-options">
+                        <div class="rate-option selected" data-value="Face &amp; Neck Bleach or O3+ D-Tan - ₹349"><span class="rate-left"><span class="radio-dot"></span> Face &amp; Neck Bleach / D-Tan</span><span class="price-tag">₹349</span></div>
+                        <div class="rate-option" data-value="Face + Full Arms + Back D-Tan / Bleach - ₹799"><span class="rate-left"><span class="radio-dot"></span> Face + Arms + Back D-Tan</span><span class="price-tag">₹799</span></div>
+                        <div class="rate-option" data-value="Complete Full Body Bleach or D-Tan - ₹1,499"><span class="rate-left"><span class="radio-dot"></span> Full Body Bleach / D-Tan</span><span class="price-tag">₹1,499</span></div>
+                    </div>
+                    <div class="mode-switch-wrap"><button type="button" class="mode-pill active-mode" data-mode="At-Home Service (Female Only)"><i class="fas fa-home"></i> Home Service</button><button type="button" class="mode-pill" data-mode="Visit Parlour (Punawale)"><i class="fas fa-store"></i> Visit Parlour</button></div>
+                    <button type="button" class="book-selected-btn"><i class="fab fa-whatsapp"></i> Book Selected on WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="service-card parlour-card" data-card-title="Beauty Parlour - Rica, Chocolate & Honey Waxing" data-categories="all home-service grooming" data-details="Gentle, low-pain Italian Rica White Chocolate, Roll-On &amp; Honey waxing with disposable strips, fresh bedsheet cover, and post-wax gel." data-includes="Original Italian Rica / Chocolate / Honey Wax|100% Disposable Spatulas &amp; Wax Strips|Arms, Legs, Underarms, Back &amp; Bikini|Post-Wax Cooling Aloe/Oil Gel">
+                <div>
+                    <div class="card-top-meta"><span class="home-badge js-home-filter-trigger"><i class="fas fa-home"></i> Home Service Available</span><button type="button" class="detail-link-btn open-card-detail"><i class="fas fa-info-circle"></i> View Details</button></div>
+                    <h3>8. Rica, Chocolate &amp;
